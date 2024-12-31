@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css for login page */
+
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #000000;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #1a1919;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+
+
+        }
+
+        nav a:hover {
+            background-color: rgb(167, 160, 117);
+            color: aliceblue;
+        }
+
+        li {
+            list-style: none;
+            /* display: inline-block; */
+
+
+
+
+
+        }
+
+        nav img {
+            padding: 10px;
+
+        }
+
+        li a {
+            margin-right: 30px;
+            text-align: right;
+            color: rgb(167, 160, 117);
+            font-size: 20px;
+
+        }
+
+        .winner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+            border: 20x;
+
+
+        }
+
+        .winner .wrapper {
+            position: relative;
+            width: 420px;
+            background: transparent;
+            border: 2px solid;
+            color: rgb(167, 160, 117);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+
+
+            padding: 30px 40px;
+            padding-left: 20px;
+
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 30px;
+
+        }
+
+        .winner .input {
+            width: 100%;
+            height: 40px;
+            margin: 30px 0;
+
+        }
+
+        .input input {
+            width: 99%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgb(167, 160, 117);
+            border-radius: 40px;
+            padding-left: 20px;
+
+
+        }
+
+        .winner .icon {
+            position: relative;
+            right: 40px;
+            left: 413px;
+
+            bottom: 30px;
+
+
+        }
+
+        .winner .remember {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .winner .remember a {
+            text-decoration: none;
+
+        }
+
+        .winner .remember a:hover {
+            color: rgb(167, 160, 117);
+            text-decoration: underline;
+
+        }
+
+        .winner .btnlogin input {
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border: none;
+            border: 2px solid rgb(167, 160, 117);
+            border-radius: 40px;
+            background-color: rgb(167, 160, 117);
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .winner .btnlogin input:hover {
+            background-color: rgb(111, 104, 61)
+        }
+
+        .winner .btnlogin p {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .winner .btnlogin p a {
+            text-decoration: none;
+
+        }
+
+        .winner .btnlogin p a:hover {
+            color: rgb(167, 160, 117);
+            text-decoration: underline;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav>
+        <img src="orignal_logo.png" alt="" height="45px">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <main class="winner">
+        <div class="wrapper">
+            <form>
+                <div class="space boxes">
+                    <h2>login</h2>
+
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="enter your email" required><ion-icon name="mail"
+                        class="icon"></ion-icon>
+                </div>
+
+
+                <div class="input">
+                    <input type="password" placeholder="password" required><ion-icon name="lock-closed"
+                        class="icon"></ion-icon>
+
+
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">remember me!</label>
+
+                    <a href="forgot">forgot password?</a>
+                </div>
+
+
+
+                <div class="btnlogin">
+                    <input type="submit" value="login">
+                    <p>Don't have an account ?<a href="register">Register</a></p>
+                </div>
+
+
+        </div>
+
+        </form>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </main>
+</body>
+
+
+</html>
